@@ -2,7 +2,7 @@ version: '2'
 services:
 
   pipeline:
-    image: gofast/telem-base-pipeline
+    image: gofast/telem-workshop-pipeline
     build: pipeline/.
     ports:
       - 5432:5432
