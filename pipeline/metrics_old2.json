@@ -1,5 +1,16 @@
 [
 	{
+		"basepath" : "Cisco-IOS-XR-ipv4-ospf-oper:ospf/processes/1/default-vrf/ospf-summary",
+		"spec" : {
+			"fields" : [
+				{"name" : "sa-num-nbrs", "tag" : true},
+				{"name" : "sa-num-nbrs-up"},
+				{"name" : "sa-num-intf"},
+				{"name" : "sa-num-intf-up"}
+			]
+		}
+	},
+	{
 		"basepath" : "openconfig-bgp:bgp/neighbors/neighbor/state",
 		"spec" : {
 			"fields" : [
@@ -30,7 +41,30 @@
 			]
 		}
 	},
-	{
+
+  {
+                "basepath" : "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "interface-name", "tag" : true},
+                                {"name" : "input-data-rate"},
+                                {"name" : "input-packet-rate"},
+                                {"name" : "output-data-rate", "track": true},
+                                {"name" : "output-packet-rate"},
+                                {"name" : "peak-input-data-rate"},
+                                {"name" : "peak-input-packet-rate"},
+                                {"name" : "peak-output-data-rate"},
+                                {"name" : "peak-output-packet-rate"},
+                                {"name" : "bandwidth"},
+                                {"name" : "load-interval"},
+                                {"name" : "output-load"},
+                                {"name" : "input-load"},
+                                {"name" : "reliability"}
+                        ]
+                }
+},
+
+       {
 		"basepath" : "Cisco-IOS-XR-mpls-te-oper:mpls-te/tunnels/tunnel-auto-bandwidths/tunnel-auto-bandwidth",
 		"spec" : {
 			"fields" : [

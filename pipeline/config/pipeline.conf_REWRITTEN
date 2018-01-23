@@ -11,7 +11,7 @@ stage=xport_input
 #[inspector]
 #stage=xport_output
 #type=tap
-#file=/data/dump.txt
+#file = /data/dump.txt
 #datachanneldepth=1000
 
 [influxdb]

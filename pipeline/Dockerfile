@@ -8,6 +8,8 @@ MAINTAINER Chad Peterson <chapeter@cisco.com>
 ADD config/pipeline.conf /data/config/pipeline.conf
 ADD config/pipeline.conf_REWRITTEN /data/config/pipeline.conf_REWRITTEN
 
+ADD metricsdump.txt /data/metricsdump.text
+ADD dump.txt /data/dump.txt
 ADD metrics.json /data/metrics.json
 ADD metrics_gpb.json /data/metrics_gpb.json
 

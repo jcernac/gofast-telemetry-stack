@@ -16,6 +16,7 @@ services:
       - influx_port=8086
     volumes:
       - ${PWD}/pipeline/metrics.json:/data/metrics.json
+      - ${PWD}/pipeline/config/pipeline.conf_REWRITTEN:/data/config/pipeline.conf_REWRITTEN
 
   influx:
     image: influxdb:1.1.3
@@ -41,3 +42,8 @@ services:
      - "GF_DASHBOARDS.JSON_PATH=/var/lib/grafana/dashboards/"
     depends_on:
       - influx
+
+  anx:
+      image: containers.cisco.com/adt_emear/anx
+      ports:
+          - 9269:8080

@@ -1,10 +1,12 @@
 [
 	{
-		"basepath" : "openconfig-bgp:bgp/neighbors/neighbor/state",
+		"basepath" : "Cisco-IOS-XR-ipv4-ospf-oper:ospf/processes/1/default-vrf/ospf-summary",
 		"spec" : {
 			"fields" : [
-				{"name" : "neighbor-address", "tag" : true},
-				{"name" : "session-state"}
+				{"name" : "sa-num-nbrs", "tag" : true},
+				{"name" : "sa-num-nbrs-up"},
+				{"name" : "sa-num-intf"},
+				{"name" : "sa-num-intf-up"}
 			]
 		}
 	},
@@ -30,7 +32,7 @@
 			]
 		}
 	},
-	
+
   {
                 "basepath" : "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate",
                 "spec" : {
