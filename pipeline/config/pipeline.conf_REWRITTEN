@@ -1,12 +1,13 @@
 [default]
 id=pipeline
 
-[testbed]
-type=tcp
-encap=st
-listen=:5432
-logdata=on
+mymdtrouter]
 stage=xport_input
+type=grpc
+encap=gpb
+listen=:5432
+tls=false
+logdata=on
 
 #[inspector]
 #stage=xport_output
