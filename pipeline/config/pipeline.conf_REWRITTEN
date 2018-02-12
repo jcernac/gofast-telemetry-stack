@@ -1,7 +1,7 @@
 [default]
 id=pipeline
 
-mymdtrouter]
+[mymdtrouter]
 stage=xport_input
 type=grpc
 encap=gpb
